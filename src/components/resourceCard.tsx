@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import React, {useState, useRef, useEffect, useContext, useLayoutEffect} from "react";
-import {Checkbox, Text, Box, Image} from "@chakra-ui/react";
+import React, {useRef, useContext} from "react";
+import {Checkbox, Text, Box, Image, useColorModeValue} from "@chakra-ui/react";
 import {ResourceItem} from "src/server";
 import {RounderBox, H3} from "./primitives";
 import {getDb, myCollectionTableName} from "src/util/indexDB";
@@ -83,6 +83,7 @@ const ResourceCard: React.FC<Props> = ({
         })
     };
 
+    const bg = useColorModeValue('gray.100', 'gray.700');
     return (
         <RounderBox
             display="flex"
@@ -93,6 +94,7 @@ const ResourceCard: React.FC<Props> = ({
             }}
             transition="all 1s"
             cursor="pointer"
+            backgroundColor={bg}
             onClick={clickHandle}
             pos="relative"
         >

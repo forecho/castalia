@@ -1,7 +1,7 @@
 import {resource, ResourceItem} from "src/server";
 import {Box, HStack, VStack, Text, Image, useToast, Link} from "@chakra-ui/react";
 import ResourcePanel from "./resourcePanel";
-import {RounderBox, H2} from "src/components/primitives"
+import {H2} from "src/components/primitives"
 import React, {useEffect, useState} from "react";
 import {myCollectionTableName, getDb, isSupportIndexDB} from "src/util/indexDB";
 import AddResourceDrawer from "./addResourceDrawer";
@@ -40,7 +40,7 @@ const Content = () => {
     };
 
     const importMyCollection = () => {
-        var elem = document.createElement("input");
+        const elem = document.createElement("input");
         elem.setAttribute("type", "file");
         elem.addEventListener("change", (event: any) => {
             if (event.target.files.length !== 1) {
@@ -81,9 +81,9 @@ const Content = () => {
     };
 
     const exportMyCollectionToLocal = () => {
-        var blob = new Blob([JSON.stringify([myCollection], null, 2)], {type: "application/json;charset=utf-8"}).slice(2, -1);
-        var url = URL.createObjectURL(blob);
-        var elem = document.createElement("a");
+        const blob = new Blob([JSON.stringify([myCollection], null, 2)], {type: "application/json;charset=utf-8"}).slice(2, -1);
+        const url = URL.createObjectURL(blob);
+        const elem = document.createElement("a");
         elem.href = url;
         elem.download = "我的收藏.json";
         elem.click();
@@ -92,7 +92,6 @@ const Content = () => {
     return (
         <MyCollectionContext.Provider value={{setMyCollection}}>
             <VStack
-                bgColor="var(--main-bg-color)"
                 alignItems="stretch"
                 rowGap="30px"
                 display="inline-flex"

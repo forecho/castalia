@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Box} from "@chakra-ui/react";
+import {Box, useColorModeValue} from "@chakra-ui/react";
 import {RounderBox} from "src/components/primitives";
 import {resource, Resource} from "src/server/";
 import MenuItem from "./menuItem";
@@ -16,6 +16,7 @@ const siderResource: Resource[] = [
 
 const Sider = () => {
     const [activeResource, setActiveResource] = useState<Resource>(siderResource[0]);
+    const bg = useColorModeValue('gray.100', 'gray.700');
 
     useEffect(() => {
         const handle = () => {
@@ -38,7 +39,7 @@ const Sider = () => {
         <RounderBox
             position="sticky"
             top="15px"
-            backgroundColor="white"
+            backgroundColor={bg}
             width="200px"
             textAlign="center"
             paddingTop="50px"
