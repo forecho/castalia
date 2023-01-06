@@ -1,9 +1,9 @@
-import React, {useEffect} from "react";
+import React from "react";
 import {Resource} from "src/server";
-import {Box, HStack, Stack} from "@chakra-ui/react";
-import Image from "next/image";
+import {HStack, useColorModeValue} from "@chakra-ui/react";
 import {H2} from "src/components/primitives";
 import {useRef} from "react";
+import DynamicFaIcon from "./icon";
 
 interface Props {
     resource: Resource;
@@ -15,6 +15,8 @@ const MenuItem: React.FC<Props> = ({
     active
 }) => {
     const linkRef = useRef<HTMLAnchorElement>(null);
+    const bg = useColorModeValue('gray.100', 'gray.700');
+    const activeBg = useColorModeValue('gray.200', 'gray.600');
 
     const clickHandle = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         const linkEle = linkRef.current;
@@ -29,19 +31,13 @@ const MenuItem: React.FC<Props> = ({
             p="8px 20px"
             columnGap="10px"
             onClick={clickHandle}
-            bgColor={active ? "#f1eeff" : "white"}
+            bgColor={active ? activeBg : bg}
             cursor="pointer"
             _hover={{
-                bgColor: "#f1eeff55"
+                bgColor: activeBg
             }}
         >
-            <img
-                src={resource.icon}
-                height={20}
-                width={20}
-                alt={resource.name}
-                loading="lazy"
-            />
+            <DynamicFaIcon name={resource.icon} />
             <H2
                 fontWeight="normal"
                 fontSize="14px"

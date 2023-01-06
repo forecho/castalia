@@ -1,8 +1,9 @@
 import React, {PropsWithChildren} from "react";
 import {Resource, ResourceItem} from "src/server";
-import {Box, Grid, Image} from "@chakra-ui/react";
+import {Box, Grid, Image, useColorModeValue} from "@chakra-ui/react";
 import {H2, RounderBox} from "./primitives";
 import ResourceCard from "./resourceCard";
+import { FaInbox } from "react-icons/fa";
 
 interface Props {
     resource: Resource;
@@ -24,11 +25,9 @@ const ResourcePanel: React.FC<PropsWithChildren<Props>> = ({
         <RounderBox
             display="flex"
             justifyContent="center"
+            backgroundColor={useColorModeValue("gray.100", "gray.800")}
         >
-            <Image
-                src="./empty.png"
-                h="110px"
-            />
+             <FaInbox size="130px" color="#dce0e6" />
         </RounderBox>
     );
 
