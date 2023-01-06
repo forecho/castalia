@@ -98,6 +98,10 @@ const initDb = (db: IDBDatabase): DatabaseOperation => {
 };
 
 export const getDb = (version = 1) => new Promise<DatabaseOperation>((res, rej) => {
+    if (!isSupportIndexDB()) {
+        rej();
+        return;
+    }
     const request = window.indexedDB.open(databaseName, version);
 
     request.onerror = () => {

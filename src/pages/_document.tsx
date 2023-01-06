@@ -18,7 +18,6 @@ class MyDocument extends Document {
                 <Head>
                     <link rel="icon" href="./castalia-s.png" />
                     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"></link>
-                    <title>Castalia</title>
                 </Head>
                 <body>
                     <ColorModeScript initialColorMode={theme.config.initialColorMode} />
