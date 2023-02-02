@@ -37,7 +37,7 @@ const MenuItem: React.FC<Props> = ({
                 bgColor: activeBg
             }}
         >
-            <DynamicFaIcon name={resource.icon} />
+            {/*<DynamicFaIcon name={resource.icon} />*/}
             <H2
                 fontWeight="normal"
                 fontSize="14px"

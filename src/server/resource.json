@@ -47,7 +47,7 @@
             },
             {
                 "name": "Emoji XD",
-                "description": "线上Emoji百科全书，支持关键词搜索",
+                "description": "线上 Emoji 百科全书，支持关键词搜索",
                 "url": "https://emojixd.com",
                 "image": "./images/site/emojixd.jpg"
             },
@@ -101,7 +101,7 @@
             },
             {
                 "name": "404 Illustrations",
-                "description": "有趣的404插画",
+                "description": "有趣的 404 插画",
                 "url": "https://www.kapwing.com/404-illustrations",
                 "image": "./images/site/404-illustrations.jpg"
             }
@@ -113,7 +113,7 @@
         "site": [
             {
                 "name": "ColorDrop",
-                "description": "每组4种颜色",
+                "description": "每组 4 种颜色",
                 "url": "https://colordrop.io",
                 "image": "./images/site/colordrop.png"
             },
@@ -185,7 +185,7 @@
             },
             {
                 "name": "Open Color",
-                "description": "13个色系，每种色系分10个明度",
+                "description": "13 个色系，每种色系分 10 个明度",
                 "url": "https://yeun.github.io/open-color/",
                 "image": "./images/site/opencolor.png"
             },
@@ -280,7 +280,7 @@
                 "image": "./images/site/iso.png"
             },
             {
-                "name": "PR模板网",
+                "name": "PR 模板网",
                 "description": "Premiere 模板素材等资源下载网站",
                 "url": "https://prmuban.com",
                 "image": "./images/site/premiere.png"
@@ -341,7 +341,7 @@
             },
             {
                 "name": "docsmall",
-                "description": "在线免费图片、PDF压缩工具",
+                "description": "在线免费图片、PDF 压缩工具",
                 "url": "https://docsmall.com",
                 "image": "./images/site/docsmall.jpg"
             },
@@ -359,7 +359,7 @@
             },
             {
                 "name": "Contrast Ratio",
-                "description": "轻松计算色彩对比度，帮助通过WCAG",
+                "description": "轻松计算色彩对比度，帮助通过 WCAG",
                 "url": "https://contrast-ratio.com",
                 "image": "./images/site/contrast-ratio.jpg"
             },
@@ -377,7 +377,7 @@
             },
             {
                 "name": "即时设计",
-                "description": "可实时协作的专业UI设计工具",
+                "description": "可实时协作的专业 UI 设计工具",
                 "url": "https://js.design",
                 "image": "./images/site/js-design.png"
             },
@@ -444,7 +444,7 @@
             {
                 "name": "SpeechAce",
                 "description": "口语学习网站",
-                "url": "https://www.vocabulary.com",
+                "url": "https://www.speechace.com/",
                 "image": "./images/site/speechace.png"
             },
             {
@@ -497,13 +497,13 @@
         "site": [
             {
                 "name": "Glassmorphism Generator",
-                "description": "在线调节生成磨砂玻璃效果，可直接复制CSS",
+                "description": "在线调节生成磨砂玻璃效果，可直接复制 CSS",
                 "url": "https://hype4.academy/tools/glassmorphism-generator",
                 "image": "./images/site/glassmorphism.png"
             },
             {
                 "name": "Neumorphism",
-                "description": "在线调节生成新拟态效果，自动生成CSS",
+                "description": "在线调节生成新拟态效果，自动生成 CSS",
                 "url": "https://neumorphism.io/#e0e0e0",
                 "image": "./images/site/neumorphism.png"
             },
